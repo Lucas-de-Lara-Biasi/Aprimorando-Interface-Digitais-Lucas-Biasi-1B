@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width: device-width initial-scale: 1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>REDDIT 2</title>
+</head>
+
+<body>
+    <!--TOPBAR-->
+    <div class="main_topbar">
+        <img src="https://logos-world.net/wp-content/uploads/2023/12/Reddit-Logo.png" class="logo">
+
+        <!--SEARCH BAR-->
+        <div id="main_search" class="search_bar">
+            <img src="images/brand/reddit-mascot-no-bg.png" class="search_logo"> <!--logo-->
+            <div>
+                <input id="search_input" type="text">
+                <button id="search_button" class="search_button"></button>
+                <!--logo-->
+            </div>
+        </div>
+
+        <!--PROFILE / SETTINGS-->
+        <button id="profile_button" class="profile_button">
+            <img id="profile_pfp" class="profile_pfp" src="images/pfps/pfp-mascot-blue.jpg">
+        </button>
+    </div>
+
+    <!--SIDEBAR LEFT-->
+    <div class="main_sidebar_left">
+    </div>
+
+    <!--SIDEBAR RIGHT-->
+    <div class="main_sidebar_right">
+        <!--APENAS PARA EQUILIBRIO DO VIEWPORT-->
+    </div>
+
+    <!--CONTENT-WINDOW-->
+    <div class="main_content">
+        <!--SUBREDDIT-->
+        <div class="postx">
+
+        </div>
+
+        <div class="posts" id="posts_div">
+
+            <!--POST TEMPLATE-->
+            <div class="post" id="post_template" style="visibility: hidden; position: absolute;">
+
+                <!--HEADER-->
+                <div class="post_header">
+                    <img class="post_pfp" src="images/pfps/pfp-mascot-blue.jpg">
+                    <p class="post_username">USUÁRIO-TESTE-1234</p>
+                    <p class="post_timeago">• <span class="time" style="--secs:0"></span> ago</p>
+                </div>
+                <h1 class="post_title">Title template</h1>
+
+                <!--CONTENT VAI AQUI-->
+
+                <div class="post_content">
+
+                </div>
+
+                <!--FOOTER-->
+                <div class="post_footer">
+                    <!--VOTES-->
+                    <div class="post_votes">
+                        <input type="checkbox" class="post_vote_upvote post_vote_button">
+
+                        <p class="post_votes_count">0</p>
+
+                        <input type="checkbox" class="post_vote_downvote post_vote_button">
+                    </div>
+
+                    <!--COMMENTS-->
+                    <button class="post_subbutton post_button">
+                        <svg class="bt_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                            <g>
+                                <path
+                                    d="M10 1a9 9 0 00-9 9c0 1.947.79 3.58 1.935 4.957L.231 17.661A.784.784 0 00.785 19H10a9 9 0 009-9 9 9 0 00-9-9zm0 16.2H6.162c-.994.004-1.907.053-3.045.144l-.076-.188a36.981 36.981 0 002.328-2.087l-1.05-1.263C3.297 12.576 2.8 11.331 2.8 10c0-3.97 3.23-7.2 7.2-7.2s7.2 3.23 7.2 7.2-3.23 7.2-7.2 7.2z">
+                                </path>
+                            </g>
+                        </svg>
+                        <p class="comment_count">0</p>
+                    </button>
+
+                    <!--SHARE-->
+                    <button class="post_subbutton post_button">
+                        <svg class="bt_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                            <g>
+                                <path
+                                    d="M12.8 17.524l6.89-6.887a.9.9 0 000-1.273L12.8 2.477a1.64 1.64 0 00-1.782-.349 1.64 1.64 0 00-1.014 1.518v2.593C4.054 6.728 1.192 12.075 1 17.376a1.353 1.353 0 00.862 1.32 1.35 1.35 0 001.531-.364l.334-.381c1.705-1.944 3.323-3.791 6.277-4.103v2.509c0 .667.398 1.262 1.014 1.518a1.638 1.638 0 001.783-.349v-.002zm-.994-1.548V12h-.9c-3.969 0-6.162 2.1-8.001 4.161.514-4.011 2.823-8.16 8-8.16h.9V4.024L17.784 10l-5.977 5.976z">
+                                </path>
+                            </g>
+                        </svg>
+                        <p style="padding-right: 5px;">Compartilhar</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="community.js"></script>
+</body>
+
+</html>

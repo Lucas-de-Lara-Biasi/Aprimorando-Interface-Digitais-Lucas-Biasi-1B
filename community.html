@@ -25,8 +25,8 @@
         </div>
 
         <!--PROFILE / SETTINGS-->
-        <button id="main_profile_button" class="profile_button">
-            <img id="main_profile_pfp" class="profile_pfp" src="images/pfps/pfp-mascot-blue.jpg">
+        <button id="profile_button" class="profile_button">
+            <img id="profile_pfp" class="profile_pfp" src="images/pfps/pfp-mascot-blue.jpg">
         </button>
     </div>
 
@@ -41,19 +41,31 @@
 
     <!--CONTENT-WINDOW-->
     <div class="main_content">
-        <!--SUBREDDIT-->
-        <div class="postx">
-
-        </div>
-
         <div class="posts" id="posts_div">
+            <!--SUBREDDIT-TOPBAR-->
+            <div class="subreddit" id="subreddit">
+                <div class="sub_img"></div>
+                <!--sub_info-->
+                <div class="sub_info">
+                    <!--text-->
+                    <div class="sub_text">
+                        <img class="sub_pfp" src="images/pfps/pfp-mascot-blue.jpg">
+                        <h1 class="sub_name">r/brabos</h1>
+                    </div>
+                    <!--buttons-->
+                    <div class="sub_buttons">
+                        <button class="sub_create">+ Create</button>
+                        <button class="sub_join">join</button>
+                    </div>
+                </div>
+            </div>
 
             <!--POST TEMPLATE-->
             <div class="post" id="post_template" style="visibility: hidden; position: absolute;">
 
                 <!--HEADER-->
                 <div class="post_header">
-                    <img class="post_pfp" src="images/pfps/acid_green (1).png">
+                    <img class="post_pfp" src="images/pfps/pfp-mascot-blue.jpg">
                     <p class="post_username">USUÁRIO-TESTE-1234</p>
                     <p class="post_timeago">• <span class="time" style="--secs:0"></span> ago</p>
                 </div>
@@ -104,9 +116,7 @@
         </div>
     </div>
 
-    <script type="module" src="community.js"></script>
-    <script type="module" src="profile.js"></script>
-    <script type="module" src="post_creator.js"></script>
+    <script src="community.js"></script>
 </body>
 
 </html>

@@ -14,6 +14,8 @@
     --upvote: #FF8b60;
     --neutral: #C6C6C6;
     --downvote: #9494FF;
+
+    --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 body {
@@ -219,6 +221,54 @@ body {
     }
 }
 
+.subreddit {
+    background-color: red; 
+    height: 250px; 
+    width: 100%;
+
+    margin-bottom: 15px;
+
+    .sub_img {
+        width: 100%;
+        height: 45%;
+    }
+
+    .sub_info {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 30%;
+
+        font-family: var(--main-font);
+
+        .sub_text {
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+
+            .sub_pfp {
+                border-radius: 100px;
+                height: 150%;
+                margin-right: 15px;
+            }
+
+            .sub_name {
+            }
+        }
+
+        .sub_buttons {
+            position: absolute;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+}
+
 .post {
     min-height: 132.5px;
     width: 100%;
@@ -232,7 +282,7 @@ body {
     position: relative;
 
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: var(--main-font);
 
     .post_header {
         display: flex;
@@ -310,7 +360,7 @@ body {
 
         .post_votes {
             transition: 0.2s;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+            font-family: var(--main-font);
             text-align: center;
             transition: 0.2s;
             color: white;

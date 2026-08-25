@@ -25,98 +25,188 @@
         </div>
 
         <!--PROFILE / SETTINGS-->
-        <button id="profile_button" class="profile_button">
-            <img id="profile_pfp" class="profile_pfp" src="images/pfps/pfp-mascot-blue.jpg">
+        <button id="main_profile_button" class="profile_button">
+            <img id="main_profile_pfp" class="profile_pfp" src="images/pfps/pfp-mascot-blue.jpg">
         </button>
     </div>
 
     <!--SIDEBAR LEFT-->
     <div class="main_sidebar_left">
-    </div>
-
-    <!--SIDEBAR RIGHT-->
-    <div class="main_sidebar_right">
-        <!--APENAS PARA EQUILIBRIO DO VIEWPORT-->
+        <div class="left_login_info">
+            <h1>Participe de Comunidades!</h1>
+            <h3>Entrar</h3>
+            <!--Buttons-->
+            <button>
+                Continuar com o Google
+            </button>
+            <button>
+                Continuar com Apple
+            </button>
+            <button>
+                Continuar com número de telefone
+            </button>
+            <button>
+                Continuar com email
+            </button>
+        </div>
     </div>
 
     <!--CONTENT-WINDOW-->
     <div class="main_content">
-        <div class="posts" id="posts_div">
+        <div class="content_center">
             <!--SUBREDDIT-TOPBAR-->
             <div class="subreddit" id="subreddit">
-                <div class="sub_img"></div>
+                <div class="sub_img" style="background-image: url(images/brand/bck.jpg);"></div>
                 <!--sub_info-->
                 <div class="sub_info">
                     <!--text-->
                     <div class="sub_text">
-                        <img class="sub_pfp" src="images/pfps/pfp-mascot-blue.jpg">
-                        <h1 class="sub_name">r/brabos</h1>
+                        <img class="sub_pfp" src="images/brand/logo.jpg">
+                        <h1 class="sub_name">r/desenvolvimento-de-jogos</h1>
                     </div>
                     <!--buttons-->
                     <div class="sub_buttons">
-                        <button class="sub_create">+ Create</button>
-                        <button class="sub_join">join</button>
+                        <button class="sub_create sub_button sub_post">+ Postar</button>
+                        <button class="sub_join sub_button sub_join">Unir-se</button>
                     </div>
                 </div>
             </div>
 
-            <!--POST TEMPLATE-->
-            <div class="post" id="post_template" style="visibility: hidden; position: absolute;">
+            <!--POSTS-->
+            <div class="posts" id="posts_div">
+                <!--POST TEMPLATE-->
+                <div class="post" id="post_template" style="visibility: hidden; position: absolute;">
+                    <!--HEADER-->
+                    <div class="post_header">
+                        <img class="post_pfp" src="images/pfps/acid_green (1).png">
+                        <p class="post_username">USUÁRIO-TESTE-1234</p>
+                        <p class="post_timeago">• <span class="time" style="--secs:0"></span> ago</p>
+                    </div>
+                    <h1 class="post_title">Title template</h1>
 
-                <!--HEADER-->
-                <div class="post_header">
-                    <img class="post_pfp" src="images/pfps/pfp-mascot-blue.jpg">
-                    <p class="post_username">USUÁRIO-TESTE-1234</p>
-                    <p class="post_timeago">• <span class="time" style="--secs:0"></span> ago</p>
-                </div>
-                <h1 class="post_title">Title template</h1>
-
-                <!--CONTENT VAI AQUI-->
-
-                <div class="post_content">
-
-                </div>
-
-                <!--FOOTER-->
-                <div class="post_footer">
-                    <!--VOTES-->
-                    <div class="post_votes">
-                        <input type="checkbox" class="post_vote_upvote post_vote_button">
-
-                        <p class="post_votes_count">0</p>
-
-                        <input type="checkbox" class="post_vote_downvote post_vote_button">
+                    <!--TAGS-->
+                    <div class="post_tags">
                     </div>
 
-                    <!--COMMENTS-->
-                    <button class="post_subbutton post_button">
-                        <svg class="bt_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-                            <g>
-                                <path
-                                    d="M10 1a9 9 0 00-9 9c0 1.947.79 3.58 1.935 4.957L.231 17.661A.784.784 0 00.785 19H10a9 9 0 009-9 9 9 0 00-9-9zm0 16.2H6.162c-.994.004-1.907.053-3.045.144l-.076-.188a36.981 36.981 0 002.328-2.087l-1.05-1.263C3.297 12.576 2.8 11.331 2.8 10c0-3.97 3.23-7.2 7.2-7.2s7.2 3.23 7.2 7.2-3.23 7.2-7.2 7.2z">
-                                </path>
-                            </g>
-                        </svg>
-                        <p class="comment_count">0</p>
-                    </button>
+                    <!--CONTENT VAI AQUI-->
 
-                    <!--SHARE-->
-                    <button class="post_subbutton post_button">
-                        <svg class="bt_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
-                            <g>
-                                <path
-                                    d="M12.8 17.524l6.89-6.887a.9.9 0 000-1.273L12.8 2.477a1.64 1.64 0 00-1.782-.349 1.64 1.64 0 00-1.014 1.518v2.593C4.054 6.728 1.192 12.075 1 17.376a1.353 1.353 0 00.862 1.32 1.35 1.35 0 001.531-.364l.334-.381c1.705-1.944 3.323-3.791 6.277-4.103v2.509c0 .667.398 1.262 1.014 1.518a1.638 1.638 0 001.783-.349v-.002zm-.994-1.548V12h-.9c-3.969 0-6.162 2.1-8.001 4.161.514-4.011 2.823-8.16 8-8.16h.9V4.024L17.784 10l-5.977 5.976z">
-                                </path>
-                            </g>
+                    <div class="post_content">
+
+                    </div>
+
+                    <!--FOOTER-->
+                    <div class="post_footer">
+                        <!--VOTES-->
+                        <div class="post_votes">
+                            <input type="checkbox" class="post_vote_upvote post_vote_button">
+
+                            <p class="post_votes_count">0</p>
+
+                            <input type="checkbox" class="post_vote_downvote post_vote_button">
+                        </div>
+
+                        <!--COMMENTS-->
+                        <button class="post_subbutton post_button">
+                            <svg class="bt_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                <g>
+                                    <path
+                                        d="M10 1a9 9 0 00-9 9c0 1.947.79 3.58 1.935 4.957L.231 17.661A.784.784 0 00.785 19H10a9 9 0 009-9 9 9 0 00-9-9zm0 16.2H6.162c-.994.004-1.907.053-3.045.144l-.076-.188a36.981 36.981 0 002.328-2.087l-1.05-1.263C3.297 12.576 2.8 11.331 2.8 10c0-3.97 3.23-7.2 7.2-7.2s7.2 3.23 7.2 7.2-3.23 7.2-7.2 7.2z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <p class="comment_count">0</p>
+                        </button>
+
+                        <!--SHARE-->
+                        <button class="post_subbutton post_button">
+                            <svg class="bt_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+                                <g>
+                                    <path
+                                        d="M12.8 17.524l6.89-6.887a.9.9 0 000-1.273L12.8 2.477a1.64 1.64 0 00-1.782-.349 1.64 1.64 0 00-1.014 1.518v2.593C4.054 6.728 1.192 12.075 1 17.376a1.353 1.353 0 00.862 1.32 1.35 1.35 0 001.531-.364l.334-.381c1.705-1.944 3.323-3.791 6.277-4.103v2.509c0 .667.398 1.262 1.014 1.518a1.638 1.638 0 001.783-.349v-.002zm-.994-1.548V12h-.9c-3.969 0-6.162 2.1-8.001 4.161.514-4.011 2.823-8.16 8-8.16h.9V4.024L17.784 10l-5.977 5.976z">
+                                    </path>
+                                </g>
+                            </svg>
+                            <p style="padding-right: 5px;">Compartilhar</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub_sidebar">
+                <!--information-->
+                <div class="sub_sideinfo">
+                    <!--info-->
+                    <p class="info_title"><strong>Desenvolvimento de jogos!</strong></p>
+                    <p class="info_desc">uma comunidade focada na discusão de temas que envolvem o desenvolvimento de
+                        jogos virtuais.</p>
+
+                    <!--sub desc info-->
+                    <div class="info_subinfo">
+                        <svg class="ico" part="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="m16.771 6.795-5.776-4.072c-1.099-.774-2.521-.939-3.716-.429-.945.405-1.875.998-2.688 1.714-1.646 1.45-2.59 3.584-2.59 5.855v5.834c0 1.82 1.48 3.301 3.3 3.301h9.4c1.819 0 3.3-1.48 3.3-3.3V9.165c0-.94-.46-1.828-1.229-2.372l-.001.001ZM5.779 5.36a8.38 8.38 0 012.208-1.41c.234-.1.487-.15.743-.15.425 0 .857.135 1.227.396l5.844 4.12a.464.464 0 01.183.542.465.465 0 01-.463.34h-9.52c-.822 0-1.578.267-2.2.712v-.045c0-1.754.721-3.396 1.979-4.504h-.001ZM14.7 17.2H5.3a1.501 1.501 0 01-1.499-1.5v-2.704c0-1.213.987-2.2 2.2-2.2h9.52c.239 0 .466-.04.679-.11v1.876a.638.638 0 01-.638.638H7v1.6h8.562c.223 0 .434-.043.638-.104v1.003c0 .828-.672 1.501-1.499 1.501H14.7Z">
+                            </path>
                         </svg>
-                        <p style="padding-right: 5px;">Compartilhar</p>
-                    </button>
+                        <p>Criado em 20 de ago de 2026</p>
+                    </div>
+                    <div class="info_subinfo">
+                        <svg class="ico" part="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M10 1c-4.96 0-9 4.04-9 9s4.04 9 9 9 9-4.04 9-9-4.04-9-9-9Zm7.15 8.2h-3.17c-.1-2.37-.62-4.46-1.4-5.91 2.46.95 4.27 3.2 4.57 5.91Zm-7.15 8c-.66 0-2.2-2.24-2.38-6.4h4.76c-.18 4.16-1.73 6.4-2.38 6.4Zm-2.38-8C7.8 5.04 9.35 2.8 10 2.8c.65 0 2.2 2.24 2.38 6.4H7.62Zm-.2-5.91c-.78 1.45-1.3 3.55-1.4 5.91H2.85c.3-2.71 2.11-4.97 4.57-5.91ZM2.85 10.8h3.17c.1 2.37.62 4.46 1.4 5.91-2.46-.95-4.27-3.2-4.57-5.91Zm9.73 5.91c.78-1.45 1.3-3.55 1.4-5.91h3.17a7.188 7.188 0 01-4.57 5.91Z">
+                            </path>
+                        </svg>
+                        <p>Público</p>
+                    </div>
+
+                    <div class="info_visits">
+                        <div>
+                            <h3><strong>1</strong></h3>
+                            <p>visitantes mensais</p>
+                        </div>
+                        <div>
+                            <h3><strong>1</strong></h3>
+                            <p>contribuições mensais</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--divider-->
+                <div style="width: 100%; height: 1px; background-color: rgba(255,255,255,0.5);"></div>
+
+                <!--Community Buttons-->
+                <p class="sub_tt">LINKS EXTERNOS</p>
+                <div class="sub_custom">
+                    <a href="https://alura.com.br"><button>Alura</button></a>
+                    <a href="https://www.reddit.com"><button>Reddit</button></a>
+                </div>
+
+                <!--divider-->
+                <div style="width: 100%; height: 1px; background-color: rgba(255,255,255,0.5);"></div>
+
+                <!--Regras-->
+                <p class="sub_tt">REGRAS DO REDDIT</p>
+                <div class="sub_rules">
+                    <div class="rule">
+                        <p class="rule_num">1</p>
+                        <p class="rule_desc">Seguir as regras</p>
+                    </div>
+                    <div class="rule">
+                        <p class="rule_num">2</p>
+                        <p class="rule_desc">Completar o curso do Alura!</p>
+                    </div>
+                    <div class="rule">
+                        <p class="rule_num">3</p>
+                        <p class="rule_desc">Estudar programação</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script src="community.js"></script>
+    <script src="post_creator.js"></script>
 </body>
 
 </html>

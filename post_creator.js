@@ -76,6 +76,9 @@ function SetPostContent(post, content) {
             } else if (info.type == "div") {
                 element.style.height = info.content
                 element.style.width = "100%"
+            } else if (info.type == "img") {
+                element.src = info.content.img
+                element.style.width = info.content.size
             }
 
             post_content.appendChild(element)
@@ -102,7 +105,7 @@ function SetPostTags(post, tags) {
     }
 }
 
-function CreatePost(title = "NO_TITLE", author = "", pfp = "", posttime = 0, content = [], tags = []) {
+function CreatePost(title = "...", author = "", pfp = "", posttime = 0, content = [], tags = []) {
     let post = post_template.cloneNode(true)
     post.id = post_counter_fake
     post.style = ""
@@ -217,12 +220,61 @@ CreatePost(
         { "type": "p", "content": "A Unreal Engine, motor gráfico desenvolvido pela empresa Epic Games, é um motor focado em gráficos, atualmente no mercado, é um dos melhores que pode se citar quando a questão são a renderização e texturas em alta qualidade." },
         { "type": "p", "content": "Ela vem crescendo cada vez mais nos ultimos anos, com cada vez mais tecnologicas para facilitar o desenvolvimento de jogos por pessoas comuns." },
         { "type": "blank", "content": "15" },
-        { "type": "p", "content": "O motor possui um modo de programação chamado 'Blueprint' (traduzido para planta-baixa), um modo onde é possível apenas arrastar e conectar módulos para escrever a lógica de programação de seu projeto, sem precisar aprender uma linguagem de programação escrita (e muitas vezes muito mais complexas), facilitando a criação e desenvolvimento sem a necessidade de uma grande e dedicada equipe." },
-        { "type": "a", "content": { "link": "https://dev.epicgames.com/documentation/unreal-engine/blueprint-foundations?lang=pt-BR", "text": "Fórum da Unreal Engine - Blueprints" } }
+        { "type": "p", "content": "O motor possui um modo de programação chamado 'Blueprint' (traduzido para planta-baixa), um modo onde é possível apenas arrastar e conectar módulos para escrever a lógica de programação de seu projeto, sem precisar aprender uma linguagem de programação escrita (que muitas vezes é extremamente complexo), facilitando a criação e desenvolvimento sem a necessidade de uma grande equipe." },
+        { "type": "a", "content": { "link": "https://dev.epicgames.com/documentation/unreal-engine/blueprint-foundations?lang=pt-BR", "text": "Fórum da Unreal Engine - Blueprints" } },
+        { "type": "img", "content": { "img": "https://images.squarespace-cdn.com/content/v1/5c8fe0652727be76a540eff5/31e9ac04-8732-48db-893b-a44318ca9f3c/FasterSlowFunction.PNG", "size": "100%"}}
     ],
     [
         { "name": "Motores Gráficos", "bg_color": "rgba(234, 144, 0, 0.91)" },
         { "name": "Unreal Engine", "bg_color": "rgba(255, 17, 0, 0.91)" },
+    ]
+)
+
+CreatePost(
+    "O CRESCIMENTO DA GODOT ENGINE",
+    "lucas",
+    "images/pfps/yellow (4).png",
+    320,
+    [
+        { "type": "p", "content": "A godot engine é atualmente um dos motores mais famosos do mercado, sendo focado no desenvolvimento de código aberto." },
+        { "type": "p", "content": "Ela é focada para jogos indies, facilitando para os desenvolvedores a criarem um jogo leve, barato, e simples." },
+        { "type": "blank", "content": "15" },
+        { "type": "img", "content": { "img": "https://godotengine.org/assets/press/logo_vertical_color_dark.png", "size": "100%"}}
+    ],
+    [
+        { "name": "Motores Gráficos", "bg_color": "rgba(234, 144, 0, 0.91)" },
+        { "name": "Godot Engine", "bg_color": "rgba(0, 47, 255, 0.91)" },
+    ]
+)
+
+CreatePost(
+    "A LINGUAGEM < C >",
+    "lucas",
+    "images/pfps/yellow (4).png",
+    200,
+    [
+        { "type": "p", "content": "A linguagem C, desenvolvida na década de 80, utilizada no código fonte de computadores" },
+        { "type": "p", "content": "Ela possui centenas de bibliotecas prontas para o desenvolvimento." },
+    ],
+    [
+        { "name": "Linguagem de Programação", "bg_color": "rgba(234, 66, 0, 0.91)" },
+        { "name": "C", "bg_color": "rgba(119, 0, 255, 0.91)" },
+    ]
+)
+
+CreatePost(
+    "SOURCE ENGINE",
+    "lucas",
+    "images/pfps/yellow (4).png",
+    15,
+    [
+        { "type": "p", "content": "A Source Engine, motor gráfico desenvolvido nos anos 2000 pela empresa Valve" },
+        { "type": "blank", "content": "15" },
+        { "type": "p", "content": "Ela foi um marco para o desenvolvimento de jogos, possuindo um motor de renderização impressionante para a época, possuindo tambem uma ótima fisica (chamada motor Havoc)." },
+    ],
+    [
+        { "name": "Motores Gráficos", "bg_color": "rgba(234, 144, 0, 0.91)" },
+        { "name": "Source Engine", "bg_color": "rgba(255, 17, 0, 0.91)" },
     ]
 )
 

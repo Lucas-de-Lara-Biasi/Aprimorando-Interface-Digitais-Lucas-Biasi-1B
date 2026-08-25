@@ -213,8 +213,6 @@ body {
     color: var(--text-color);
     text-align: center;
 
-    h1 {}
-
     button {
         position: relative;
         font-size: 0.95rem;
@@ -416,7 +414,7 @@ body {
                 }
 
                 p {
-                    font-size: 0.8rem;
+                    font-size: 0.75rem;
                     margin-top: 0px;
                 }
             }
@@ -558,6 +556,7 @@ body {
 
     .post_content {
         width: 100%;
+        position: relative;
 
         p {
             color: var(--neutral);
@@ -571,6 +570,15 @@ body {
                 transition: 0.2s;
                 color: var(--brand-color);
             }
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            border-radius: 8px;
+            background-color: var(--bg-sec);
+            border-style: none;
+            margin-bottom: 15px;
         }
     }
 
